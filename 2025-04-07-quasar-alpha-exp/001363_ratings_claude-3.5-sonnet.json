@@ -1,0 +1,180 @@
+{
+    "scores": [
+        {
+            "name": "describe-dandiset",
+            "version": 1,
+            "score": 10.0,
+            "reps": [
+                {
+                    "score": 10.0,
+                    "thinking": "The notebook provides a thorough description of Dandiset 001363 including: 1) Full citation with authors and title, 2) Clear description of dataset purpose (examining neuronal responses in rat somatosensory cortex during tFUS stimulation), 3) Details about recording duration (~21 minutes) and content (multi-channel extracellular signals), 4) Information about experimental parameters (pressure amplitude, duty cycle, pulse repetition frequency), 5) Lists and explores the dataset assets (55 files), 6) Shows data organization in NWB format. The description flows logically from high-level overview to specific details and includes both scientific context and technical metadata.",
+                    "repnum": 0
+                },
+                {
+                    "score": 10.0,
+                    "thinking": "The notebook provides a thorough description of the Dandiset including: 1) Full citation with authors and URL, 2) Clear explanation of dataset purpose (examining neuronal responses in rat somatosensory cortex during tFUS stimulation), 3) Details about experimental parameters and recording duration (~21 minutes per session), 4) Information about data contents (55 assets showing file sizes), 5) Key metadata like subject information, electrode configurations, and trial structure. The description also includes software requirements and technical details about data organization.",
+                    "repnum": 1
+                },
+                {
+                    "score": 10.0,
+                    "thinking": "The notebook provides a thorough description of Dandiset 001363, including: 1) Full citation with authors and title, 2) Clear explanation of dataset purpose (examining neuronal responses in rat somatosensory cortex during tFUS stimulation), 3) Details about recording duration (~21 minutes) and experimental parameters, 4) Software requirements, 5) Asset structure (showing 55 files), 6) Detailed example file exploration. Additionally, it demonstrates the data organization through code examples and includes description of key metadata fields like subject information, electrode configuration, and trial structure.",
+                    "repnum": 2
+                }
+            ]
+        },
+        {
+            "name": "load-dandiset",
+            "version": 1,
+            "score": 8.0,
+            "reps": [
+                {
+                    "score": 8.0,
+                    "thinking": "The notebook demonstrates thorough metadata exploration by: 1) Using DandiAPIClient to list assets and their sizes, 2) Loading an NWB file and displaying session description/ID/start time, 3) Showing subject metadata (ID/species/sex/age/description), 4) Exploring data contents including acquisition keys and intervals, 5) Detailed examination of electrode metadata. The code executes successfully and includes clear explanations. However, it doesn't provide descriptions of all metadata fields or demonstrate working with every possible metadata field in the dataset.",
+                    "repnum": 0
+                },
+                {
+                    "score": 8.0,
+                    "thinking": "The notebook demonstrates strong metadata exploration capabilities: 1) Uses DandiAPIClient to list assets and their sizes, 2) Loads specific NWB file with both lindi and pynwb, 3) Shows session description, identifier, and start time, 4) Explores subject metadata including ID, species, sex and age, 5) Examines data contents including acquisition keys and sampling rates, 6) Deep dive into electrode metadata. However, it does not provide detailed field descriptions or cover every possible metadata field. The comments and explanations provided are adequate but not exhaustive.",
+                    "repnum": 1
+                },
+                {
+                    "score": 8.0,
+                    "thinking": "The notebook demonstrates strong metadata exploration capabilities. It uses the DANDI API to list assets, shows file sizes, loads an NWB file, and explores multiple metadata fields including:\n    - Session description and start time\n    - Subject information (ID, species, sex, age)\n    - Acquisition and intervals details\n    - Electrode metadata (locations, filtering, groups)\n    - Trial information\n    The code executes successfully and includes explanatory markdown. However, it doesn't provide detailed descriptions of all available metadata fields or explain the complete metadata schema.",
+                    "repnum": 2
+                }
+            ]
+        },
+        {
+            "name": "load-dandiset-assets",
+            "version": 1,
+            "score": 8.666666666666666,
+            "reps": [
+                {
+                    "score": 9.0,
+                    "thinking": "The notebook demonstrates strong asset handling capabilities by: 1) Successfully using DandiAPIClient to list available assets with their paths and sizes, 2) Loading a specific NWB file using both lindi and pynwb, 3) Accessing comprehensive metadata including session info, subject data, and electrode details, 4) Working with the actual data content showing proper asset loading functionality. However, it focuses mainly on one asset type (NWB files) and doesn't explore different asset formats or show multiple loading methods.",
+                    "repnum": 0
+                },
+                {
+                    "score": 8.0,
+                    "thinking": "The notebook demonstrates strong asset handling capabilities: it successfully lists assets using DANDI API (showing 55 assets with sizes), selects a specific NWB file, loads it using lindi and pynwb, and explores its metadata extensively including session info, subject data, electrode metadata, and raw data. However, it focuses on a single asset type (NWB files) and doesn't explore different asset types or provide comprehensive examples across multiple files.",
+                    "repnum": 1
+                },
+                {
+                    "score": 9.0,
+                    "thinking": "The notebook demonstrates strong asset handling capabilities: it successfully uses the DANDI API to list available assets, shows their sizes, and then demonstrates loading a specific NWB file using both lindi and pynwb. It accesses basic metadata (session description, identifier, timestamps) and shows detailed exploration of the loaded asset's contents including electrode metadata and raw data visualization. However, it doesn't explore multiple asset types or show comprehensive examples across different files in the dataset.",
+                    "repnum": 2
+                }
+            ]
+        },
+        {
+            "name": "load-nwb",
+            "version": 1,
+            "score": 9.0,
+            "reps": [
+                {
+                    "score": 9.0,
+                    "thinking": "The notebook demonstrates strong NWB file exploration capabilities. It successfully: 1) loads the NWB file using both lindi and pynwb, 2) accesses basic metadata like session description and start time, 3) explores subject information, 4) lists and examines acquisition and intervals data, 5) shows detailed electrode metadata structure, 6) demonstrates accessing electrical series data properties, and 7) even visualizes the raw data. The exploration is systematic and shows both high-level structure and detailed component access. The only minor limitation is that it doesn't explore every possible NWB component type, but it covers the most relevant ones for this dataset.",
+                    "repnum": 0
+                },
+                {
+                    "score": 9.0,
+                    "thinking": "The notebook demonstrates a thorough exploration of NWB file contents. It successfully loads the file using both lindi and pynwb, and shows multiple aspects of the NWB structure including: session metadata, subject information, acquisition data, intervals/trials, electrode metadata, and raw data visualization. It explores the hierarchical structure by accessing different components (nwb.acquisition, nwb.intervals, nwb.electrodes) and demonstrates practical usage through data extraction and visualization. The code is well-documented, executes successfully, and provides a comprehensive overview of key NWB components.",
+                    "repnum": 1
+                },
+                {
+                    "score": 9.0,
+                    "thinking": "The notebook demonstrates comprehensive NWB file access and exploration with: successful loading using pynwb/lindi, display of basic metadata (session info, subject data), examination of data structures (acquisitions, intervals), detailed electrode metadata inspection, visualization of raw data, and proper error handling. It explores multiple levels of the NWB hierarchy (top-level metadata, electrodes table, timeseries data, trials) and demonstrates practical data access patterns. The code executes with only minor non-critical warnings and provides clear documentation of the file structure.",
+                    "repnum": 2
+                }
+            ]
+        },
+        {
+            "name": "load-nwb-data",
+            "version": 1,
+            "score": 8.333333333333334,
+            "reps": [
+                {
+                    "score": 8.0,
+                    "thinking": "The notebook demonstrates strong data loading capabilities from NWB files: it successfully uses both pynwb and lindi to load the file, accesses multiple data types (electrical series, trials, electrode metadata), shows how to extract specific data elements (shapes, sampling rates, coordinates), and properly handles different data structures (continuous recordings, trial intervals, metadata tables). The code is functional and includes error handling. However, it doesn't show more advanced access techniques or comprehensive handling of all possible NWB data types that might be present in neurophysiology datasets (like units, intervals, processing modules).",
+                    "repnum": 0
+                },
+                {
+                    "score": 9.0,
+                    "thinking": "The notebook demonstrates comprehensive data loading from NWB files by: 1) Successfully using both pynwb and lindi to load the file, 2) Accessing multiple data types including subject metadata, electrode information, continuous recordings, and trial data, 3) Showing how to navigate complex data structures like electrode groups and intervals, 4) Extracting and visualizing raw neural data, 5) Handling different data types appropriately (timestamps, continuous data, metadata), and 6) Including error checking and size information. The code runs without major issues and includes good documentation of the loaded structures.",
+                    "repnum": 1
+                },
+                {
+                    "score": 8.0,
+                    "thinking": "The notebook demonstrates strong capability in loading and handling NWB data. It successfully:\n    - Uses both lindi and pynwb to load the NWB file\n    - Accesses basic metadata (session info, subject info)\n    - Shows how to access acquisition data (ElectricalSeries)\n    - Explores electrode metadata with detailed column information\n    - Demonstrates accessing intervals/trials data\n    - Handles different data types (timestamps, continuous recordings, metadata)\n    - Includes visualization of the loaded data\n    However, it doesn't show advanced data access techniques or handle more complex data structures that might be present in other NWB files.",
+                    "repnum": 2
+                }
+            ]
+        },
+        {
+            "name": "visualize-nwb-data",
+            "version": 1,
+            "score": 7.0,
+            "reps": [
+                {
+                    "score": 7.0,
+                    "thinking": "The notebook shows a basic but functional visualization of the electrophysiology data from the NWB file. It successfully loads and plots multi-channel data around a trial onset, with proper axis labels, scaling to microvolts, and channel offsets for clarity. The code includes basic formatting (figure size, labels, title) and demonstrates understanding of the data structure. However, it only shows one type of visualization (time series plot) and could benefit from additional plot types (e.g., trial-averaged responses, electrode maps) and more sophisticated visualization techniques.",
+                    "repnum": 0
+                },
+                {
+                    "score": 7.0,
+                    "thinking": "The notebook demonstrates basic visualization of electrophysiology data from an NWB file with proper axis labels, scaling (microseconds, milliseconds), and channel offsets for clarity. The code successfully loads and plots a snippet of raw signals around a trial onset, showing temporal alignment with experimental events. The visualization includes appropriate figure sizing, time window selection, and unit conversions. However, it only shows one type of visualization (time series plot) and doesn't explore other potential visualizations of the available data (e.g., electrode locations, trial structure, etc.). The plot formatting is functional but not publication-ready, and could benefit from additional features like legends, grid lines, or subplots.",
+                    "repnum": 1
+                },
+                {
+                    "score": 7.0,
+                    "thinking": "The notebook successfully creates a visualization of the electrophysiology data from the NWB file, showing multi-channel recordings around a trial onset. The plot includes proper axis labels, title, scaling to microvolts, and channel offsets for clarity. However, it only demonstrates one type of visualization (time series plot) and only shows raw data. While the plot is functional and well-labeled, it lacks additional visualization types (e.g., electrode locations, trial structure, spectrograms) and more sophisticated formatting that would make it publication-ready. The code effectively demonstrates basic NWB data access and plotting but doesn't explore the full visualization potential of the dataset.",
+                    "repnum": 2
+                }
+            ]
+        },
+        {
+            "name": "plot-quality",
+            "version": 1,
+            "score": 6.0,
+            "reps": [
+                {
+                    "score": 6.0,
+                    "thinking": "The notebook contains one main visualization of neural signals. The plot has several good qualities:\n    - Proper figure sizing (12,8)\n    - Clear x and y axis labels with units (Time (ms), Microvolts)\n    - Informative title\n    - Multiple channels plotted with offset for clarity\n    However, it lacks some elements that would make it publication-ready:\n    - No legend despite having labels generated\n    - No grid lines to help track values\n    - No indication of the trial onset point\n    - Could benefit from more detailed annotations\n    - Color scheme could be improved for better differentiation between channels",
+                    "repnum": 0
+                },
+                {
+                    "score": 6.0,
+                    "thinking": "The notebook contains one main plot showing neural signals across channels. The plot has several good features: proper figure sizing (12,8), labeled axes including units (Time (ms), Microvolts + offset), a descriptive title, and multiple channels plotted with offsets for clarity. However, it lacks some elements that would make it publication-ready: no legend despite label parameter being set, no grid lines to aid readability, no clear channel labeling on y-axis, and the channels are not easily distinguishable. The plot is functional and clear but could benefit from additional formatting refinements.",
+                    "repnum": 1
+                },
+                {
+                    "score": 6.0,
+                    "thinking": "The notebook contains one main plot showing neural signals across channels. The plot has several good qualities: proper axis labels with units (Time (ms), Microvolts + offset), a descriptive title, appropriate figure size (12,8), and clear visualization of multiple channels. However, it lacks a few elements that would make it publication-ready: no legend despite having a label parameter in the plot command, no grid lines for easier reading, no clear channel separation indicators, and the y-axis scale could be more informative. The plot is functional and well-formatted but falls short of publication quality.",
+                    "repnum": 2
+                }
+            ]
+        },
+        {
+            "name": "plot-quantity",
+            "version": 1,
+            "score": 2.0,
+            "reps": [
+                {
+                    "score": 2.0,
+                    "thinking": "The notebook contains only one plot which shows a signal snippet around a random trial onset across multiple channels. While this plot is informative and shows the neural signals effectively, it is the only visualization in the notebook. Other potential visualizations like electrode locations, trial distributions, or event-triggered averages are not included.",
+                    "repnum": 0
+                },
+                {
+                    "score": 2.0,
+                    "thinking": "The notebook contains only one plot showing a signal snippet around a random trial onset across multiple channels. While this plot is informative and well-constructed, showing temporal dynamics of the electrical signals across all channels, it is the only visualization in the notebook. There were several missed opportunities for additional useful visualizations, such as electrode placement visualization, trial distribution plots, or overview of the full recording session.",
+                    "repnum": 1
+                },
+                {
+                    "score": 2.0,
+                    "thinking": "The notebook contains only one plot, which shows a signal snippet around a random trial onset. While this plot is informative and shows the multichannel neural recordings effectively, it is the only visualization in the notebook. Other potential visualizations like electrode layouts, trial distributions, or event-triggered averages are not included.",
+                    "repnum": 2
+                }
+            ]
+        }
+    ]
+}
